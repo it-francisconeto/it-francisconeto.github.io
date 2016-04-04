@@ -10,9 +10,8 @@
 		radio.volume("up, down, ou mute");
 
 	Variaveis globais que podem ser usadas como callbacks:
-
-		radioIsPlaying();
-		radioIsStop();
+		window.radioIsPlaying
+		window.radioIsStop
 
 	Classes que são adicionadas ao HTML de acordo com as funções executadas:
 		.volumeMinimum
