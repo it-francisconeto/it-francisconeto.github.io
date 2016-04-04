@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<title>html5 Start</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no">
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+	<link rel="stylesheet" href="assets/css/proverbios.css">
+	<link rel="stylesheet" href="assets/css/start.css">
+	<script type="text/javascript" src="assets/js/jquery-2.2.2.min.js"></script>
+</head>
+<body>
+	<div class="section section-frame">
+		<div class="container h-full">
+			<iframe class="h-full superScroll" src="modules/contato.html"></iframe>
+		</div>
+	</div>
+	<div class="section section-code">
+		<div class="container">
+			<div class="box code-container">
+				<div class="htmlScape code">
+					$('.form_validate').validate();
+				</div>
+			</div>
+			<div class="box code-container src-js">
+				<div class="htmlScape code" data-comment="# Arquivo princpipal onde está todos os outros arquivos">
+					<link rel="stylesheet" href="assets/css/start.css">
+				</div>
+				<div class="htmlScape code" data-comment="# Arquivo princpipal onde está todos os outros arquivos">
+					<link rel="stylesheet" href="assets/css/start.css">
+				</div>
+			</div>
+			<div class="box code-container src-css">
+				<div class="htmlScape code">
+					<link rel="stylesheet" href="assets/css/start.css">
+				</div>
+				<div class="htmlScape code">
+					<link rel="stylesheet" href="assets/css/start.css">
+				</div>
+			</div>
+		</div>
+	</div>
+	<script>
+		$('.htmlScape').each(function(){
+			$(this).text($(this).html());
+		});
+	</script>
+</body>
+</html>
