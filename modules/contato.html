@@ -5,9 +5,10 @@
 	<title>html5 Bootstrap</title>
 	<meta name="viewport" content="width=device-width, user-scalable=no">
 	<link rel="shortcut icon" type="image/x-icon" href="../favicon.ico">
-	<link rel="stylesheet" href="../assets/css/proverbios.css">
-	<link rel="stylesheet" href="../assets/css/baseForm.css">
-	<script type="text/javascript" src="../assets/js/jquery-2.2.2.min.js"></script>
+	<link rel="stylesheet" href="assets/css/proverbios.css">
+	<link rel="stylesheet" href="assets/css/baseForm.css">
+	<link rel="stylesheet" href="assets/css/font-awesome.css">
+	<script type="text/javascript" src="assets/js/jquery-2.2.2.min.js"></script>
 </head>
 <body>
 	<form class="baseForm baseForm--placeholder formValidate ajaxForm" method="post">
@@ -20,6 +21,14 @@
 		<div class="col-sm-12 baseForm-box">
 			<input class="baseForm-field--type baseForm-field" name="telefone" type="text" placeholder="Telefone">
 		</div>
+		<div class="col-sm-12 baseForm-box baseForm-box--select">
+			<select class="baseForm-field--type baseForm-field" name="Assunto" id="assunto">
+				<option value="0" disabled>Assunto</option>
+				<option value="">Entrevista</option>
+				<option value="">Sugestão</option>
+				<option value="">Reclamação</option>
+			</select>
+		</div>
 		<div class="col-sm-12 baseForm-box">
 			<textarea class="required baseForm-field baseForm-field--textarea" placeholder="Mensagem"></textarea>
 		</div>
@@ -28,7 +37,7 @@
 			<input type="submit" value="Enviar" class="baseForm-button">
 		</div>
 	</form>
-	<script src="../assets/js/ajaxForm.js" type="text/javascript"></script>
-	<script src="../assets/js/jquery-validate.js" type="text/javascript"></script>
+	<script src="assets/js/ajaxForm.js" type="text/javascript"></script>
+	<script src="assets/js/jquery-validate.js" type="text/javascript"></script>
 </body>
 </html>

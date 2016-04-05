@@ -1,29 +1,33 @@
-var spinner = {},
-	spinnerMax = 10,
-	spinnerMin = 1,
 
+// jQuery Spinner;
 spinner = {
-	status: function(selector){
-		spinnerTarget = $(selector).parent().find('input[type="number"]');
-		spinnerQtd = $(selector).parent().find('input[type="number"]').val();
-		spinnerMax = $(selector).parent().find('input[type="number"]').attr('max');
-		spinnerQtd = parseInt(spinnerQtd);
-		spinnerMax = parseInt(spinnerMax);
+	status: function(el){
+		spinnerTarget = $(el).parent().find('input[type="number"]');
+
+		spinnerQtd = parseInt(spinnerTarget.val());
+		spinnerMax = parseInt(spinnerTarget.attr('max'));
+		spinnerMin = parseInt(spinnerTarget.attr('min'));
+
 		return spinnerQtd;
 		return spinnerMax;
+		return spinnerMin;
 	},
-	up: function(selector){
-		spinner.status(selector);
+	up: function(el){
+		spinner.status(el);
 		spinnerQtd = spinnerQtd + 1;
-		spinnerTarget.val(spinnerQtd);
+		if(spinnerQtd <= spinnerMax){
+			spinnerTarget.val(spinnerQtd);
+		}
 	},
-	down: function(selector){
-		spinner.status(selector);
+	down: function(el){
+		spinner.status(el);
 		spinnerQtd = spinnerQtd - 1;
-		spinnerTarget.val(spinnerQtd);
+		if(spinnerQtd >= spinnerMin){
+			spinnerTarget.val(spinnerQtd);
+		}
 	},
-	change: function(selector){
-		spinner.status(selector);
+	change: function(el){
+		spinner.status(el);
 		if(spinnerQtd > spinnerMax){
 			spinnerTarget.val(spinnerMax);
 		}

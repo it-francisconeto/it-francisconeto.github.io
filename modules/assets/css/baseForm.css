@@ -69,3 +69,19 @@
 	color: green;
 	opacity: 1;
 }
+
+.baseForm-box--select:before {
+    top: 1px;
+    right: 16px;
+    height: 38px;
+    width: 40px;
+    text-align: center;
+    position: absolute;
+    content: "\f0d7";
+    font-size: 22px;
+    font-family: FontAwesome;
+    pointer-events: none;
+    line-height: 38px;
+    background: white;
+    color: rgba(0, 0, 0, 0.31);
+}

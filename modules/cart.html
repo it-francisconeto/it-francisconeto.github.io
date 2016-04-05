@@ -15,7 +15,7 @@
 		<div class="container">
 			<table class="baseCart">
 				<tr class="baseCart-header">
-					<td class="baseCart-cell baseCart-header-cell" colspan="2">PRODUTO</td>
+					<td class="baseCart-cell baseCart-header-cell" colspan="2">PRODUTOS</td>
 					<td class="baseCart-cell baseCart-header-cell">REF.</td>
 					<td class="baseCart-cell baseCart-header-cell">QUANT.</td>
 				</tr>
@@ -31,7 +31,7 @@
 					<td class="baseCart-cell">
 						<span class="combo-qtd">
 							<button onclick="spinner.up(this)" class="combo-qtd-button combo-qtd-up"><i class="fa fa-angle-up"></i></button>
-							<input 	onchange="spinner.change(this)" max="12" value="1" class="combo-qtd-target" type="number">
+							<input 	onchange="spinner.change(this)" type="number" min="1" max="12" value="1" class="combo-qtd-target">
 							<button onclick="spinner.down(this)" class="combo-qtd-button combo-qtd-down"><i class="fa fa-angle-down"></i></button>
 						</span>
 					</td>
@@ -56,8 +56,42 @@
 					<td class="baseCart-cell"><button class="button-close"><i class="fa fa-times"></i></button></td>
 				</tr>
 			</table>
+			<table class="baseCart baseCart--shop">
+				<tr class="baseCart-header">
+					<td class="baseCart-cell baseCart-header-cell">PRODUTOS</td>
+					<td class="baseCart-cell baseCart-header-cell">QNTD.</td>
+					<td class="baseCart-cell baseCart-header-cell baseCart-cell--value">VALOR UNIT.</td>
+					<td class="baseCart-cell baseCart-header-cell baseCart-cell--value">VALOR TOTAL</td>
+				</tr>
+				<tr>
+					<td class="baseCart-cell baseCart-description">
+						<span class="baseCart-description-inner">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.
+							<span class="section baseCart-removeBox">
+								<span class="baseCart--shop-remove"><i class="fa fa-times"></i> Remover</span>
+							</span>
+						</span>
+					</td>
+					<td class="baseCart-cell">
+						<span class="combo-qtd">
+							<button onclick="spinner.up(this)" class="combo-qtd-button combo-qtd-up"><i class="fa fa-angle-up"></i></button>
+							<input 	onchange="spinner.change(this)" type="number" min="1" max="12" value="2" class="combo-qtd-target">
+							<button onclick="spinner.down(this)" class="combo-qtd-button combo-qtd-down"><i class="fa fa-angle-down"></i></button>
+						</span>
+					</td>
+					<td class="baseCart-cell baseCart-cell--value">R$ 25,00</td>
+					<td class="baseCart-cell baseCart-cell--value">R$ 50,00</td>
+				</tr>
+			</table>
 		</div>
 	</div>
 </body>
 <script type="text/javascript" src="assets/js/aurora.js"></script>
+			<style>
+				.baseCart--shop {
+					margin-top: 75px;
+				}
+			</style>
 </html>
