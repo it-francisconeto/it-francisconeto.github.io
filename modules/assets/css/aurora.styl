@@ -1,0 +1,45 @@
+@import "stylusMixin";
+
+
+/* Start button-close */
+.button-close
+	size 28px
+	display inline-block
+	border-width 2px
+	border-style solid
+	border-radius 100%
+	top 0
+	position relative
+	@extend $transition02
+	&:active
+		top 1px
+		opacity .5
+/* End button-close */
+
+/* Start combo-qtd */
+.combo-qtd
+	size 80px 38px
+	display inline-block
+	background #F3F3F3
+	position relative
+.combo-qtd-target
+	width calc(100% - (38px/2)- 5px)
+	line-height 38px
+	float left
+	@extend $textCenter
+.combo-qtd-button
+	size (38px/2 + 10px) (38px/2)
+	padding 0 5px
+	position absolute
+	right 0
+	@extend $transition01
+	@extend $textCenter
+.combo-qtd-up
+	top 0
+	&:active
+		top -2px
+.combo-qtd-down
+	bottom 0
+	&:active
+		bottom -2px
+/* End combo-qtd */

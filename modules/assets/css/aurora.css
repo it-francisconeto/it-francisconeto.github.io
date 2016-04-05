@@ -1,0 +1,59 @@
+.combo-qtd-target,
+.combo-qtd-button {
+  text-align: center;
+}
+.combo-qtd-button {
+  transition: 0.2s all linear;
+}
+.button-close {
+  transition: 0.2s all linear;
+}
+/* Start button-close */
+.button-close {
+  height: 28px;
+  width: 28px;
+  display: inline-block;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 100%;
+  top: 0;
+  position: relative;
+}
+.button-close:active {
+  top: 1px;
+  opacity: 0.5;
+}
+/* End button-close */
+/* Start combo-qtd */
+.combo-qtd {
+  height: 38px;
+  width: 80px;
+  display: inline-block;
+  background: #f3f3f3;
+  position: relative;
+}
+.combo-qtd-target {
+  width: calc(100% - (38px / 2) - 5px);
+  line-height: 38px;
+  float: left;
+}
+.combo-qtd-button {
+  height: 19px;
+  width: 29px;
+  padding: 0 5px;
+  position: absolute;
+  right: 0;
+}
+.combo-qtd-up {
+  top: 0;
+}
+.combo-qtd-up:active {
+  top: -2px;
+}
+.combo-qtd-down {
+  bottom: 0;
+}
+.combo-qtd-down:active {
+  bottom: -2px;
+}
+/* End combo-qtd */

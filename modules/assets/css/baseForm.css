@@ -1,0 +1,71 @@
+.baseForm {
+	width: 100%;
+	float: left;
+	display: block;
+	clear: both;
+}
+
+.baseForm-button,
+.baseForm-button,
+.baseForm-field {
+	border-width: 1px;
+	border-style: solid;
+	width: 100%;
+}
+
+.baseForm-field {
+    padding: 0 15px;
+    display: block;
+}
+
+.baseForm-field--textarea {
+	padding-top: 15px;
+	min-height: 130px;
+	resize: none;
+}
+
+.baseForm-field--type {
+	height: 40px;
+	line-height: 38px;
+}
+
+.baseForm-box + .baseForm-box {
+	margin-top: 15px;
+}
+
+.baseForm-button {
+	height: 40px;
+	min-width: 100px;
+	max-width: 120px;
+	padding: 0 15px;
+}
+
+.baseForm label.error {
+	padding: 0 15px;
+	line-height: 30px;
+	font-size: 80%;
+	text-transform: uppercase;
+	color: #B61F1F;
+}
+
+.baseForm .ajaxForm-alert,
+.baseForm label.error {
+	float: left;
+	width: 100%;
+	display: block;
+}
+
+
+.ajaxForm-alert {
+	color: #333;
+	opacity: .5;
+	height: 40px;
+	line-height: 40px;
+	margin-top: 10px;
+}
+
+
+.ajaxForm-alert--sucess {
+	color: green;
+	opacity: 1;
+}

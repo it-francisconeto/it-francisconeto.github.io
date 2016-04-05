@@ -1,0 +1,64 @@
+.section-frame {
+	width: 100%;
+	height: 50%;
+	margin-top: 2%;
+}
+.section-code {
+	height: 43%;
+	bottom: 0;
+	position: absolute;
+	left: 0;
+	background-color: #f1f1f1;
+	padding: 30px 0;
+}
+
+.superScroll::-webkit-scrollbar {
+	width: 8px;
+}
+
+
+.superScroll::-webkit-scrollbar-thumb {
+	border-radius: 10px;
+	background-color: #466783;
+}
+
+.superScroll::-webkit-scrollbar-thumb:window-inactive {
+	background: #466783;
+}
+
+.code {
+	font-family: monospace;
+	font-size: 17px;
+}
+
+.code-container + .code-container {
+	margin-top: 30px;
+}
+
+.code-container:before {
+	content: "Markup";
+	font-family: "Segoe Ui";
+	font-weight: bold;
+	text-transform: uppercase;
+	display: block;
+	margin-bottom: 10px;
+}
+
+.code-container.src-js:before {
+	content: "Arquivos Js";
+}
+
+.code-container.src-css:before {
+	content: "Arquivos Css";
+}
+
+.htmlScape:after {
+	content: attr(data-comment);
+	margin-bottom: 4px;
+	// opacity: .6;
+	font-size: 70%;
+	text-transform: uppercase;
+	color: #466783;
+	position: relative;
+	top: -1px;
+}
