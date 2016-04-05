@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<title>html5 Bootstrap</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no">
+	<link rel="stylesheet" href="assets/css/proverbios.css">
+	<link rel="stylesheet" href="assets/css/aurora.css">
+	<link rel="stylesheet" href="assets/css/baseCart.css">
+	<link rel="stylesheet" href="assets/css/font-awesome.css">
+	<script type="text/javascript" src="assets/js/jquery-2.2.2.min.js"></script>
+</head>
+<body>
+	<div class="section">
+		<div class="container">
+			<table class="baseCart">
+				<tr class="baseCart-header">
+					<td class="baseCart-cell baseCart-header-cell" colspan="2">PRODUTO</td>
+					<td class="baseCart-cell baseCart-header-cell">REF.</td>
+					<td class="baseCart-cell baseCart-header-cell">QUANT.</td>
+				</tr>
+				<tr>
+					<td colspan="2" class="baseCart-cell baseCart-description">
+						<span class="baseCart-description-inner">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						</span>
+					</td>
+					<td class="baseCart-cell">14512312</td>
+					<td class="baseCart-cell">
+						<span class="combo-qtd">
+							<button onclick="spinner.up(this)" class="combo-qtd-button combo-qtd-up"><i class="fa fa-angle-up"></i></button>
+							<input 	onchange="spinner.change(this)" max="12" value="1" class="combo-qtd-target" type="number">
+							<button onclick="spinner.down(this)" class="combo-qtd-button combo-qtd-down"><i class="fa fa-angle-down"></i></button>
+						</span>
+					</td>
+					<td class="baseCart-cell"><button class="button-close"><i class="fa fa-times"></i></button></td>
+				</tr>
+				<tr>
+					<td colspan="2" class="baseCart-cell baseCart-description">
+						<span class="baseCart-description-inner">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						</span>
+					</td>
+					<td class="baseCart-cell">14512312</td>
+					<td class="baseCart-cell">
+						<span class="combo-qtd">
+							<button onclick="spinner.up(this)" class="combo-qtd-button combo-qtd-up"><i class="fa fa-angle-up"></i></button>
+							<input 	onchange="spinner.change(this)" value-max="12" value="1" class="combo-qtd-target spinner-target" type="text">
+							<button onclick="spinner.down(this)" class="combo-qtd-button combo-qtd-down"><i class="fa fa-angle-down"></i></button>
+						</span>
+					</td>
+					<td class="baseCart-cell"><button class="button-close"><i class="fa fa-times"></i></button></td>
+				</tr>
+			</table>
+		</div>
+	</div>
+</body>
+<script type="text/javascript" src="assets/js/aurora.js"></script>
+</html>

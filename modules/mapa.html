@@ -1,0 +1,29 @@
+<div id="map" style="height: 300px;"></div>
+<script>
+    function initMap() {
+
+        var $lat = -12.2567096,
+            $lng = -38.956244,
+            $marker = 'assets/imagens/icon.png';
+
+        var map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 16,
+            center: {
+                lat: $lat,
+                lng: $lng
+            },
+            scrollwheel: false,
+        });
+
+        var image = $marker;
+        var beachMarker = new google.maps.Marker({
+            position: {
+                lat: $lat,
+                lng: $lng
+            },
+            map: map,
+            icon: image
+        });
+     }
+</script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA_CZUiBCqL8ElwttmdMQ4G0c_4iDFIBhg&callback=initMap"></script>
