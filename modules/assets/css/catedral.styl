@@ -1,0 +1,161 @@
+@import "stylusMixin";
+
+$mainColor1 = #2A1C36;
+
+.app-hold
+	background #f1f1f1
+	font-family "Roboto", sans-serif
+
+.catedral-radio
+	position fixed
+	width 100%
+	background $mainColor1
+	bottom 0
+	left 0
+	padding 15px
+
+.catedral-radio-header
+	margin-bottom 20px
+
+.catedral-radio-logo,
+.catedral-radio-info
+	display block
+	float left
+	
+.catedral-radio-logo
+	width 20%
+	img
+		width 100%
+
+.catedral-radio-info
+	width 80%
+	padding-left 15px
+	color white
+	padding-top 3%
+
+.catedral-radio-live
+	opacity .4
+
+.catedral-radio-title
+	margin-bottom 5px
+
+.catedral-radio-volume
+	margin-bottom 20px
+
+.catedral-radio-volume-bar
+	position relative
+	height 8px
+	background alpha(#DBDBEA, .3)
+	width calc(100% - 30px)
+	border-radius 6px
+	left 15px
+
+.catedral-radio-volume-bar-container
+	width calc(100% + 30px)
+	left -15px
+
+.catedral-radio-volume-drag
+	top 50%
+	size 20px
+	background #DBDBEA
+	border-radius 100%
+	display block
+	position absolute
+	transform translate(-50%, -50%)
+	left 50%
+	i
+		font-size 13px
+		width 100%
+		text-align center
+		opacity .58
+	
+.catedral-radio-volume-drag-container
+	size 50px 30px
+	display block
+	position absolute
+	top -10px
+	left 80%
+	
+.catedral-radio-control-small
+	size 30px
+	i.fa.fa-stop:before
+		position relative
+		top 1px
+
+.catedral-radio-control-big
+	size 56px
+	i
+		font-size 32px
+		&:before
+			left 2px
+			position relative
+			top 1px
+
+.catedral-radio-control-big
+.catedral-radio-control-small
+	background #DBDBEA
+	display inline-block
+	border-radius 100%
+	margin 0 5px
+	position relative
+	top 0
+	transition 0.2s all linear
+	&:active
+		top 2px
+	i
+		position absolute
+		top 50%
+		left 50%
+		transform translate(-50%, -50%)
+
+.catedral-radio-control
+	height 56px
+	text-align center
+
+.catedral-radio-control-small
+	top -13px
+	position relative
+	&:active
+		top -11px
+
+random(min,max)
+	return floor(math(0,'random')*(max - min + 1) + min)
+
+@css {
+	@keyframes sound {
+		0% {
+			opacity: .35;
+			height: 0%;
+		}
+		100% {
+			opacity: 1;
+			height: 100%;
+		}
+	}
+
+}
+
+.radioIsPlaying
+	for num in 1..20
+		.catedral-radio-animate-target[data-level=\"{num}\"]
+			height percentage(num/20)
+			animation-duration random(600, 760)ms
+
+.catedral-radio-animate
+	position absolute
+	width 100%
+	height 70%
+	left 0
+	bottom 0
+	transform scale(1, -1)
+	opacity .03
+	pointer-events none
+	
+.catedral-radio-animate-target
+	width percentage(1/20)
+	float left
+	background #F1F1F1
+	height 2%
+	
+.radioIsPlaying .catedral-radio-animate-target
+	animation sound 0ms -800ms linear infinite alternate
